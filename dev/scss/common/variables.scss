@@ -1,0 +1,80 @@
+$black: #000000;
+$flesh: #F1EAE6;
+$brown: #57473D;
+$brown-0: rgba(#57473D, 0);
+$keycolor: #D2A44D;
+$textColor01: #C1A192;
+
+// BREAK POINT
+@mixin bp($with) {
+    @media only screen and (min-width: $with) {
+        @content;
+    }
+}
+
+// set buger btn base layout
+%btnset {
+	display: inline-block;
+	transition: all .4s;
+	box-sizing: border-box;
+}
+
+/* -----------------------------
+	animation of buger btn
+----------------------------- */
+
+@mixin trY1($firstY: 0, $firstR: 0, $secondY: 0, $secondR: 0, $thirdY: 0, $thirdR: 0) {
+    0% {
+      -webkit-transform: translateY($firstY) rotate($firstR);
+    }
+    50% {
+      -webkit-transform: translateY($secondY) rotate($secondR);
+    }
+    100% {
+      -webkit-transform: translateY($thirdY) rotate($thirdR);
+    }
+  }
+  
+  @mixin trY2($firstY: 0, $firstR: 0, $secondY: 0, $secondR: 0, $thirdY: 0, $thirdR: 0) {
+    0% {
+      transform: translateY($firstY) rotate($firstR);
+    }
+    50% {
+      transform: translateY($secondY) rotate($secondR);
+    }
+    100% {
+      transform: translateY($thirdY) rotate($thirdR);
+    }
+  }
+  
+  @-webkit-keyframes menu-bar01 {
+      @include trY1(20px, 45deg, 20px, 0, 0, 0);
+  }
+  
+  @keyframes menu-bar01 {
+      @include trY2(20px, 45deg, 20px, 0, 0, 0);	
+  }
+  
+  @-webkit-keyframes menu-bar02 {
+      @include trY1(-20px, -45deg, -20px, 0, 0, 0);
+  }
+  
+  @keyframes menu-bar02 {
+      @include trY2(-20px, -45deg, -20px, 0, 0, 0);	
+  }
+  
+  @-webkit-keyframes active-menu-bar01 {
+      @include trY1(0, 0, 12px, 0, 12px, 45deg);
+  }
+  
+  @keyframes active-menu-bar01 {
+      @include trY2(0, 0, 12px, 0, 12px, 45deg);
+  }
+  
+  @-webkit-keyframes active-menu-bar03 {
+      @include trY1(0, 0, -12px, 0, -12px, -45deg);
+  }
+  
+  @keyframes active-menu-bar03 {
+      @include trY2(0, 0, -12px, 0, -12px, -45deg);
+  }
