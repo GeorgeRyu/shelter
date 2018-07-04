@@ -11,12 +11,12 @@
 
 </head>
 
-<body data-gr-c-s-loaded="true">
+<body <?php body_class() ?> data-gr-c-s-loaded="true">
 
 	<header id="header" class="header">
 		<a class="header__logo" href="<?php echo esc_url( home_url() ); ?>"></a>	
 		<nav class="header__menu-contents">
-			<ul>
+			<ul class="yellowtail">
 				<li class="header__link-home">
 					<a href="<?php echo esc_url( home_url() ); ?>">
 						Home

@@ -78,3 +78,25 @@ $textColor01: #C1A192;
   @keyframes active-menu-bar03 {
       @include trY2(0, 0, -12px, 0, -12px, -45deg);
   }
+
+  /* -----------------------------
+	main image animation
+----------------------------- */
+
+@keyframes slider{
+	0%{
+		opacity:0;
+	}
+	20.83%{
+		opacity:1;
+	}
+	33.33%{
+		opacity:1;
+	}
+	45.83%{
+		opacity:0;
+	}
+	100%{
+		opacity:0;
+	}	
+}

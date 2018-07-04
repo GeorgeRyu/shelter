@@ -7,7 +7,7 @@ $bp-l: 1260px;
     left: 0;
     padding: 0 1%;
     width: 100%;
-    z-index: 100;
+    z-index: 1000;
 
     &__logo {
         display: block;
@@ -44,7 +44,6 @@ $bp-l: 1260px;
             transform: translateX(-50%);
             padding-left: 40px;
             margin-top: 25vh;
-            font-family: 'Yellowtail', cursive, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 
             &:before {
                 content: "";
