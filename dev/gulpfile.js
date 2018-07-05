@@ -103,7 +103,10 @@ gulp.task('images', () => {
 // CSS processing
 gulp.task('css', ['images'], () => {
     return gulp.src(css.src)
-      .pipe(sass(css.sassOpts))
+      .pipe(sass({
+        outputStyle: 'compressed',
+        includePaths: ['node_modules/susy/sass']
+      }).on('error', sass.logError))
       .pipe(postcss(css.processors))
       .pipe(gulp.dest(css.build))
       .pipe(browsersync ? browsersync.reload({ stream: true }) : gutil.noop());

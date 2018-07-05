@@ -33,26 +33,14 @@
 	<section id="works" class="section section-works">
 		<div class="section-works__front-content">
 			<div class="section-works__text">
-				<h2>
-					<img id="titleworks" class="titleworks" src="<?php echo esc_url(get_template_directory_uri() ); ?>/images/title_works1.png" alt="制作事例">							
-				</h2>	
+				<h2 class="yellowtail">Works</h2>	
 				<p>
 					長年さまざまなイメージパースを製作しており、<br class="br-change">
 					要望通りのものをご提案させていただきます。<br class="br-change">
 					手書きとCGどちらでも製作いたします。
 				</p>					
 			</div>
-
-			<div class="section-works__slider">
-				<ul>
-					<li><a href=""><img src="<?php echo esc_url(get_template_directory_uri() ); ?>/images/work-01.jpg" alt=""></a></li>
-					<li><a href=""><img src="<?php echo esc_url(get_template_directory_uri() ); ?>/images/work-02.jpg" alt=""></a></li>
-					<li><a href=""><img src="<?php echo esc_url(get_template_directory_uri() ); ?>/images/work-03.jpg" alt=""></a></li>
-					<li><a href=""><img src="<?php echo esc_url(get_template_directory_uri() ); ?>/images/work-04.jpg" alt=""></a></li>
-					<li><a href=""><img src="<?php echo esc_url(get_template_directory_uri() ); ?>/images/work-05.jpg" alt=""></a></li>
-					<li><a href=""><img src="<?php echo esc_url(get_template_directory_uri() ); ?>/images/work-06.jpg" alt=""></a></li>
-				</ul>
-			</div>
+			<?php echo do_shortcode('[smartslider3 slider=1]'); ?>
 			<a class="btn-more" href="<?php echo esc_url( home_url('/works') ); ?>">詳しく見る</a>
 		</div>
 		<div class="section-works__bg-images">

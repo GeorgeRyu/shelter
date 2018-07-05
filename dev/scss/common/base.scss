@@ -1,102 +1,102 @@
+$susy: (
+  'columns': susy-repeat(12),
+  'gutters': 0.5,
+  'spread': 'narrow',
+  'container-spread': 'narrow',
+);
+
 html {
     font-size: 62.5%;
   }
   
-  body {
-      font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-      font-size: 1.4rem;
-      background: $flesh;
-      line-height: 2rem;
-      margin: 0;
-  }
-  
-  * {
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
-  }
-  
-  $susy: (
-    columns: 12,
-    gutters: 1/4,
-    math: fluid,
-    output: float,
-    gutter-position: inside, 
-);
+body {
 
-  h1 {
-      font-weight: 100;
-      font-size: 4.5rem;
-      line-height: 6.5rem;
-      letter-spacing: 1px;
-      color: $textColor01;
-  }
-  
-  h2 {
-      font-weight: 100;
-      font-size: 3rem;
-      line-height: 4.5rem;
-      letter-spacing: 1px;
-      color: $textColor01;
-  }
-  
-  h3 {
-      color: $textColor01;
-  }
-  
-  p {
-      color: $textColor01;
-      font-size: 1.6rem;
-      line-height: 2.4rem;
-      letter-spacing: 1px;
-      margin: 0;
-  }
-  
-  a {
-      color: $textColor01;
-      text-decoration: none;
-      cursor: pointer;
-      transition: 0.2s;
-  
-      &:hover {
-          color: $keycolor;
-          text-decoration: none;
-      }
-  }
-  
-  ul {
-      list-style: none;
-      padding: 0;
-      margin: 0; 
-  }
-  
-  .yellowtail {
+    font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    font-size: 1.4rem;
+    background: $flesh;
+    line-height: 2rem;
+    margin: 0;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-weight: 100;
+    font-size: 4.5rem;
+    line-height: 6.5rem;
+    letter-spacing: 1px;
+    color: $textColor01;
+}
+
+h2 {
+    font-weight: 100;
+    font-size: 3rem;
+    line-height: 4.5rem;
+    letter-spacing: 1px;
+    color: $textColor01;
+}
+
+h3 {
+    color: $textColor01;
+}
+
+p {
+    color: $textColor01;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+a {
+    color: $textColor01;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+        color: $keycolor;
+        text-decoration: none;
+    }
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+}
+
+.yellowtail {
     font-family: 'Yellowtail', cursive, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-  }
+}
 
 
-  :placeholder-shown {
-   color: #84675A;
-  }
-  /* Google Chrome, Safari, Opera 15+, Android, iOS */
-  ::-webkit-input-placeholder {
-   color: #84675A;
-  }
-  
-  /* Firefox 18- */
-  :-moz-placeholder {
-   color: #84675A;
-    opacity: 1; 
-  }
-  
-  /* Firefox 19+ */
-  ::-moz-placeholder {
+:placeholder-shown {
+    color: #84675A;
+}
+/* Google Chrome, Safari, Opera 15+, Android, iOS */
+::-webkit-input-placeholder {
+    color: #84675A;
+}
+
+/* Firefox 18- */
+:-moz-placeholder {
     color: #84675A;
     opacity: 1; 
-  }
-  
-  /* IE 10+ */
-  :-ms-input-placeholder {
-   color: #84675A;
-  }
-  
+}
+
+/* Firefox 19+ */
+::-moz-placeholder {
+    color: #84675A;
+    opacity: 1; 
+}
+
+/* IE 10+ */
+:-ms-input-placeholder {
+    color: #84675A;
+}
+

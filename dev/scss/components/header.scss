@@ -1,6 +1,10 @@
 $bp-m: 960px;
 $bp-l: 1260px;
 
+.logged-in .header {
+    top: 32px;
+}
+
 .header {
     position: fixed;
     top: 0;

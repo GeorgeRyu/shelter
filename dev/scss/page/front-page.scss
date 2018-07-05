@@ -31,11 +31,6 @@
 
     // MAIN        
     .section-main {
-
-        &__content {
-
-        }
-
         &__main-text {
             position: absolute;
             top: 50%;
@@ -133,4 +128,54 @@
             display: none;
         }
     }    
+
+    // MAIN        
+    .section-works {
+        background: $brown;
+
+        &__front-content {
+            @include gs-l();
+            position: absolute;
+            top: 50%;
+            z-index: 2;
+            transform: translateY(-50%);    
+            
+            .n2-ss-align {
+                background-color: $white;
+            }
+        }
+
+        &__text {
+            text-align: right;
+            margin-bottom: 40px;
+
+            h2 {
+                font-size: 16rem;
+                margin: 7rem 0;                
+            }
+        }
+
+        &__bg-images {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: inherit;
+            height: inherit;
+            
+            img {
+                position: absolute;
+                width: 40%;
+            }
+        }
+
+        &__decoration-1 {
+            top: 0;
+            left: 0;
+        }
+
+        &__decoration-2 {
+            bottom: 0;
+            right: 0;
+        }
+    }
 }
