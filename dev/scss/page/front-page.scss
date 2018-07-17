@@ -24,7 +24,7 @@
         }
 
         // CONTACT                
-        &.section-contact {
+        &.section-bottom {
             z-index: 300;
         }
     }
@@ -172,9 +172,9 @@
         &__text {
             position: relative;
             display: inline-block;
-            text-align: left;
+            text-align: center;
             width: 50%;
-            padding: 20vh 0 0 5vw;
+            padding: 20vh 5vw 0 ;
 
             h2 {
                 font-size: 12vw;
@@ -226,8 +226,6 @@
 
         &__text {
             @extend .section-works__text;
-            text-align: right;
-            padding: 20vh 4rem 0 0;
         }
 
         #n2-ss-3-align {
@@ -251,4 +249,41 @@
             }
         }
     }
+
+    //ADDRESS & CONTACT FORM
+    .section-bottom {
+        background: $brown;
+
+        &__wrap {
+            height: inherit;
+            @include gs-l();
+        }
+
+        &__ad-form {
+            display: flex;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            margin: 0 auto;
+
+            >div {
+                width: 50%;
+            }
+        }
+
+        &__address {
+            img {
+                width: 70%;
+            }
+        }
+
+        &__large-text {
+            margin-top: 2rem;
+
+            p {
+                font-size: 2.7vw;
+                line-height: 1.5;                
+            }
+        }
+    }   
 }
