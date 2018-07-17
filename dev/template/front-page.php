@@ -18,7 +18,7 @@
 				</ul>
 			</div>
 		</div>
-		<div class="section-main__main-spimages">
+		<div class="section-main__main-sp-images">
 			<div class="section-main__sp-slider">
 				<ul>
 					<li><img src="<?php echo esc_url(get_template_directory_uri() ); ?>/images/main_sp-visual_1.jpg" alt="work-image01"></li>
@@ -39,9 +39,9 @@
 					要望通りのものをご提案させていただきます。<br class="br-change">
 					手書きとCGどちらでも製作いたします。
 				</p>					
+				<a class="btn-more" href="<?php echo esc_url( home_url('/works') ); ?>">詳しく見る</a>
 			</div>
 			<?php echo do_shortcode('[smartslider3 slider=1]'); ?>
-			<a class="btn-more" href="<?php echo esc_url( home_url('/works') ); ?>">詳しく見る</a>
 		</div>
 		<div class="section-works__bg-images">
 			<img class="section-works__decoration-1" src="<?php echo esc_url(get_template_directory_uri() ); ?>/images/bg-image-works1.jpg" alt="bg-decoration-image1">
@@ -61,18 +61,9 @@
 						様々なタッチの絵に日々楽しみながら挑戦して仕事に生かそうと考えています。<br class="br-change">
 						あくまでブログなので気の向くままの内容です。
 					</p>
+					<a class="btn-more" href="<?php echo esc_url( home_url('/blog') ); ?>">詳しく見る</a>				
 				</div>
-				<div class="slider-blog">
-					<ul>
-						<li><a href=""><img src="<?php echo esc_url(get_template_directory_uri() ); ?>/images/blog-01.jpg" alt=""></a></li>
-						<li><a href=""><img src="<?php echo esc_url(get_template_directory_uri() ); ?>/images/blog-02.jpg" alt=""></a></li>
-						<li><a href=""><img src="<?php echo esc_url(get_template_directory_uri() ); ?>/images/blog-03.jpg" alt=""></a></li>
-						<li><a href=""><img src="<?php echo esc_url(get_template_directory_uri() ); ?>/images/blog-04.jpg" alt=""></a></li>
-						<li><a href=""><img src="<?php echo esc_url(get_template_directory_uri() ); ?>/images/blog-05.jpg" alt=""></a></li>
-						<li><a href=""><img src="<?php echo esc_url(get_template_directory_uri() ); ?>/images/blog-06.jpg" alt=""></a></li>
-					</ul>
-				</div>
-				<a class="btn-more" href="<?php echo esc_url( home_url('/blog') ); ?>">詳しく見る</a>				
+				<?php echo do_shortcode('[smartslider3 slider=3]'); ?>				
 			</div>
 			<div class="bg-images">
 				<img class="bg-decoration-image3" src="<?php echo esc_url(get_template_directory_uri() ); ?>/images/bg-image-blog1.png" alt="bg-decoration-image3">
