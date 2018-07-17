@@ -50,25 +50,21 @@
 	</section>
 
 	<section id="blog" class="section section-blog">
-		<div class="section-content">
-			<div class="front-content">
-				<div class="text-blog">
-					<h2>
-						<img src="<?php echo esc_url(get_template_directory_uri() ); ?>/images/title_blog.png" alt="ブログ" class="titleblog">
-					</h2>
-					<p>
-						仕事とは別で、日々周りにある風景などを絵にしています。<br class="br-change">
-						様々なタッチの絵に日々楽しみながら挑戦して仕事に生かそうと考えています。<br class="br-change">
-						あくまでブログなので気の向くままの内容です。
-					</p>
-					<a class="btn-more" href="<?php echo esc_url( home_url('/blog') ); ?>">詳しく見る</a>				
-				</div>
-				<?php echo do_shortcode('[smartslider3 slider=3]'); ?>				
+		<div class="section-blog__front-content">
+			<div class="section-blog__text">
+				<h2 class="yellowtail">Blog</h2>	
+				<p>
+					仕事とは別で、<br class="br-change">
+					日々周りにある風景などを絵にしています。<br class="br-change">
+					あくまでブログなので気の向くままの内容です。
+				</p>
+				<a class="btn-more" href="<?php echo esc_url( home_url('/blog') ); ?>">詳しく見る</a>				
 			</div>
-			<div class="bg-images">
-				<img class="bg-decoration-image3" src="<?php echo esc_url(get_template_directory_uri() ); ?>/images/bg-image-blog1.png" alt="bg-decoration-image3">
-			</div>					
+			<?php echo do_shortcode('[smartslider3 slider=3]'); ?>				
 		</div>
+		<div class="section-blog__bg-images">
+			<img class="bg-decoration-image3" src="<?php echo esc_url(get_template_directory_uri() ); ?>/images/bg-image-blog1.png" alt="bg-decoration-image3">
+		</div>					
 	</section>
 
 	<section id="contact" class="section section-contact">
