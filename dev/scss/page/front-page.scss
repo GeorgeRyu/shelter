@@ -249,41 +249,4 @@
             }
         }
     }
-
-    //ADDRESS & CONTACT FORM
-    .section-bottom {
-        background: $brown;
-
-        &__wrap {
-            height: inherit;
-            @include gs-l();
-        }
-
-        &__ad-form {
-            display: flex;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            margin: 0 auto;
-
-            >div {
-                width: 50%;
-            }
-        }
-
-        &__address {
-            img {
-                width: 70%;
-            }
-        }
-
-        &__large-text {
-            margin-top: 2rem;
-
-            p {
-                font-size: 2.7vw;
-                line-height: 1.5;                
-            }
-        }
-    }   
 }

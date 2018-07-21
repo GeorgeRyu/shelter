@@ -18,6 +18,12 @@ $textColor01: #C1A192;
     margin: 0 span($gutter wide);
 }
 
+@mixin cp($in-row: 50%, $in-column: 50%,  $out-column: -50%, $out-row: -50%) {
+    top: $in-row;
+    left: $in-column;
+    transform: translate($out-column, $out-row);    
+}
+
 // set buger btn base layout
 %btnset {
 	display: inline-block;

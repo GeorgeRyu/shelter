@@ -1,0 +1,115 @@
+    //ADDRESS & CONTACT FORM
+    #contact {
+        background: $brown;
+    }
+
+    .section-bottom {
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: inherit;
+            width: 100%;
+            opacity: 0.05;
+            background-size: cover;
+            background:  $brown url(images/bg/bg_bottom_content.jpg) no-repeat center center fixed;
+            z-index: -5;
+        }
+
+        &__wrap {
+            position: relative;
+            height: inherit;
+            @include gs-l();
+        }
+        
+        &__ad-form {
+            display: flex;
+            position: relative;
+            height: inherit;
+            width: 100%;
+            margin: 0 auto;
+
+            >div {
+                position: relative;
+                width: 50%;
+
+                >div {
+                    position: absolute;
+                    @include cp();
+                }
+            }
+        }
+
+        &__address {
+            img {
+                width: 70%;
+            }
+        }
+
+        &__large-text {
+            margin-top: 2rem;
+
+            p {
+                font-size: 2.7vw;
+                line-height: 1.5;                
+            }
+        }
+
+        &__form {
+            text-align: center;
+        }
+
+        &__wrap-form {
+
+            width: 80%;
+
+            form {
+                >p {
+                    margin-bottom: 1rem;     
+                    
+                    input[type=submit] {
+                        display: block;
+                        width: 80%;
+                        height: 4rem;
+                        margin: 2rem auto 0;
+                        text-align: center;
+                        border: none;
+                        font-size: 1.6rem;
+                        letter-spacing: 0.5px;
+                        color: $brown;
+                        background-color: $textColor01;
+                        transition: transform 0.3s ease;
+                        
+                        &:hover {
+                            transform: scale(0.95);
+                        }
+                    }
+                }    
+            }
+        }
+
+        &__name,
+        &__email,
+        &__textarea {
+            width: 100%;
+            outline: none;
+            font-size: 1.6rem;
+            letter-spacing: 1px;
+            color: $textColor01;
+            background-color: rgba(0, 0, 0, 0.2);
+            border: 1px solid $textColor01;
+            padding: 8px;
+        }
+
+        &__name,
+        &__email {
+            height: 4rem;
+        } 
+    
+        &__footer {
+            position: absolute;
+            bottom: 0;
+        }
+    }   
