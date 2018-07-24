@@ -24,12 +24,10 @@
 					</div>
 				</div>
 			</div>
-			<div class="section-bottom__footer">
-				<div class="footer-img">
-					<p class="copyright">@ 2017 shelter.Inc</p>				
-				</div>
-			</div>
-
+		</div>
+		<div class="section-bottom__footer">
+			<p class="copyright">@ 2017 shelter.Inc</p>				
+			<img src="<?php echo esc_url(get_template_directory_uri() ); ?>/images/bg/bg_footer.png" alt="">
 		</div>
 	</section>
 

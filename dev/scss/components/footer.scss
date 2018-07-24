@@ -62,8 +62,12 @@
         }
 
         &__wrap-form {
-
             width: 80%;
+
+            h2 {
+                font-size: 6rem;
+                margin-bottom: 3rem;
+            }
 
             form {
                 >p {
@@ -80,10 +84,11 @@
                         letter-spacing: 0.5px;
                         color: $brown;
                         background-color: $textColor01;
-                        transition: transform 0.3s ease;
+                        transition: all 0.3s ease;
                         
                         &:hover {
                             transform: scale(0.95);
+                            background-color: $keycolor;
                         }
                     }
                 }    
@@ -110,6 +115,20 @@
     
         &__footer {
             position: absolute;
+            text-align: center;
+            width: 100%;
+            left: 0;
             bottom: 0;
+
+            .copyright {
+                position: absolute;
+                bottom: 0.5rem;
+                left: 50%;
+                transform: translate(-50%);                
+            }
+
+            img {
+                width: inherit;
+            }
         }
     }   
