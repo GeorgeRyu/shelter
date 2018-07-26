@@ -37,7 +37,7 @@ $bp-l: 1260px;
         bottom: 0;
         height: 100vh;
         width: 100vw;
-        background-color: rgba(0, 0, 0, 0.95);	
+        background-color: rgba($black, 0.9);	
 
         ul {
             position: relative;
@@ -78,7 +78,7 @@ $bp-l: 1260px;
 
                     &:hover{
                         opacity: 1;
-                        color: $keycolor;
+                        color: $keyColor;
                     }
                 }
             }            
@@ -90,7 +90,7 @@ $bp-l: 1260px;
     }
 
     &__btn-menu {
-		@extend %btnset;
+		@extend %btnSet;
 		position: absolute;
 	    right: 2%;
 		width: 32px;
@@ -99,7 +99,7 @@ $bp-l: 1260px;
 		cursor: pointer;			
 
 		span {
-			@extend %btnset; 
+			@extend %btnSet; 
 			position: absolute;
 			left: 0;
 			width: 100%;

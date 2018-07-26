@@ -2,20 +2,24 @@
 
 	<section id="main" class="section section-main">
 		<div class="section-main__main-text">
-			<h2 class="section-main__copy yellowtail">Best visual effect</h2>
-			<p>
-				より魅力的でコストパフォーマンスに優れた<br class="br-control">
-				ビジュアルを提案いたします。
-			</p>
+			<h2 class="section-main__copy yellowtail"><?php the_field('main_copy1'); ?></h2>
+			<p><?php the_field('main_copy2'); ?></p>
 		</div>
 		<div class="section-main__main-images">
 			<div class="section-main__slider">
-				<ul>
-					<li><img src="<?php echo esc_url(get_template_directory_uri() ); ?>/images/main_visual_1.jpg" alt="work-image01"></li>
-					<li><img src="<?php echo esc_url(get_template_directory_uri() ); ?>/images/main_visual_2.jpg" alt="work-image02"></li>
-					<li><img src="<?php echo esc_url(get_template_directory_uri() ); ?>/images/main_visual_3.jpg" alt="work-image03"></li>
-					<li><img src="<?php echo esc_url(get_template_directory_uri() ); ?>/images/main_visual_4.jpg" alt="work-image04"></li>
-				</ul>
+				<?php 
+
+				$images = get_field('main_images');
+
+				if( $images ): ?>
+					<ul>
+						<?php foreach( $images as $image ): ?>
+							<li>
+								<img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
+							</li>
+						<?php endforeach; ?>
+					</ul>
+				<?php endif; ?>
 			</div>
 		</div>
 		<div class="section-main__main-sp-images">

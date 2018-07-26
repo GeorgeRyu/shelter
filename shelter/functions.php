@@ -20,9 +20,9 @@
   function pagename_class($classes = '') {
     if (is_page()) {
       $page = get_post(get_the_ID());
-      $classes[] = 'page-' . $page->post_name;
+      $classes[] = $page->post_name;
       if ($page->post_parent) {
-        $classes[] = 'page-' . get_page_uri($page->post_parent) . '-child';
+        $classes[] = get_page_uri($page->post_parent) . '-child';
       }
     }
     return $classes;

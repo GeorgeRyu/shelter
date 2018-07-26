@@ -1,12 +1,5 @@
 .home {
     .section {
-        position: sticky;
-        width: 100%;
-        height: 100vh;
-		background: $flesh url("./images/bg/bg_flesh.jpg");
-        top: 0;
-        left: 0;
-        overflow: hidden;
         
         // MAIN        
         &.section-main {
@@ -33,18 +26,18 @@
     .section-main {
         &__main-text {
             position: absolute;
-            top: 50%;
+            top: 44%;
             left: 50%;
             padding: 40px 40px 32px;
             min-width: 80%;
             transform: translate(-50%, -20%);
-            background-color: rgba($flesh, 0.95);
-            z-index: 1;
+            z-index: 5;
 
             p {
                 position: relative;
                 padding-top: 2rem;
                 text-align: center;
+                text-shadow: 0 0 6px rgba($white, 0.7);
 
                 .br-control {
                     display: none;
@@ -68,12 +61,26 @@
             text-align: center;
             margin-left: -1.5rem;
             font-size: 11vw;
+            text-shadow: 0 0 10px rgba($white, 0.7);
             margin: 0 0 48px;
         }
 
         &__main-images {
             width: inherit;
-            height: inherit; 
+            height: inherit;
+            
+            &:before {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: inherit;
+                height: inherit;
+                background: $flesh url("./images/bg/bg_flesh.jpg");
+                opacity: 0.85;
+                z-index: 2;
+            }
         }
 
         &__slider {

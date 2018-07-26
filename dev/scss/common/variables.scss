@@ -3,7 +3,7 @@ $white: #ffffff;
 $flesh: #F1EAE6;
 $brown: #57473D;
 $brown-0: rgba(#57473D, 0);
-$keycolor: #D2A44D;
+$keyColor: #D2A44D;
 $textColor01: #C1A192;
 
 // BREAK POINT
@@ -25,7 +25,7 @@ $textColor01: #C1A192;
 }
 
 // set buger btn base layout
-%btnset {
+%btnSet {
 	display: inline-block;
 	transition: all .4s;
 	box-sizing: border-box;
