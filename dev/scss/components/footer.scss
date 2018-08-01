@@ -4,6 +4,7 @@
     }
 
     .section-bottom {
+        z-index: 300;
 
         &:after {
             content: "";

@@ -1,15 +1,19 @@
 @import "susy";
 
-// common style file
+// common style files
 @import './common/theme';
 @import './common/variables';
 @import './common/base';
 
-// compon. style file
+// components style files
 @import './components/header';
 @import './components/footer';
 
-// page s. file
-@import './page/front-page';
+// pages files
 @import './page/works';
 @import './page/blog';
+
+// blocks files
+@import './page/blocks/main-view-area';
+@import './page/blocks/works-area';
+@import './page/blocks/blog-area';

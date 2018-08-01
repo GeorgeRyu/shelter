@@ -30,7 +30,6 @@
 			<img src="<?php echo esc_url(get_template_directory_uri() ); ?>/images/bg/bg_footer.png" alt="">
 		</div>
 	</section>
-
 	<?php wp_footer(); ?>
 
 </body>

@@ -1,0 +1,34 @@
+//BLOG
+.section-blog {
+    z-index: 200;
+
+    &__front-content {
+        @extend .section-works__front-content;
+        flex-direction: row;
+    }
+
+    &__text {
+        @extend .section-works__text;
+    }
+
+    #n2-ss-3-align {
+        @extend #n2-ss-1-align;
+
+        #n2-ss-3-arrow-previous,
+        #n2-ss-3-arrow-next {
+            top: 50% !important;
+        }
+    }
+
+    &__bg-images {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 50%;
+        
+        img {
+            width: 100%;
+            transform: scale(-1, 1);                
+        }
+    }
+}
