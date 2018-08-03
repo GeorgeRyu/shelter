@@ -1,0 +1,20 @@
+.title-area {
+    position: relative;
+    text-align: center;
+    height: auto;
+    padding: 16rem 0 10rem;
+
+    &__wrap-content {
+        @include gs-l();
+
+        .yellowtail {
+        font-size: 12vw;
+        line-height: 4rem;
+        margin-bottom: 24px;
+
+        span {
+            font-size: 2rem;
+            }
+        }
+    }
+}

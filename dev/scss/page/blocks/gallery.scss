@@ -1,0 +1,33 @@
+.gallery {
+    position: relative;
+    text-align: center;
+    height: auto;
+    padding-bottom: 10rem;
+
+    &__wrap-content {
+        @include gs-l();
+    }
+
+    &__sort {
+        margin-bottom: 40px;
+    }
+
+    &__wrap-items {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        text-align: center;
+        width: 760px;
+        margin: 0 auto;
+
+        li {
+            height: 180px;
+            width: 32%;
+            margin-bottom: 24px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-color: $brown;
+        }
+    }
+}

@@ -27,6 +27,18 @@ if( have_rows('blocks') ):
             $descriptionBlog = get_sub_field('description_blog');
             $linkBlog = get_sub_field('link_blog');
             include 'blocks/blog_area.php';
+
+        elseif( get_row_layout() == 'title_area' ): 
+            $mainTitle = get_sub_field('main_title');
+            $subTitle = get_sub_field('sub_title');
+            $description = get_sub_field('description');
+            include 'blocks/title_area.php';
+
+        elseif( get_row_layout() == 'gallery' ): 
+            $pageType = get_sub_field('page_type');
+            $category = get_sub_field('works_category');
+            include 'blocks/gallery.php';
+    
         endif;
     
     endwhile;

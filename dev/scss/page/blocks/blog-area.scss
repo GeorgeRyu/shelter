@@ -9,6 +9,12 @@
 
     &__text {
         @extend .section-works__text;
+
+        .btn-more {
+            &:hover {
+                color: $flesh;
+            }
+        }
     }
 
     #n2-ss-3-align {
