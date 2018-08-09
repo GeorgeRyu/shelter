@@ -42,7 +42,7 @@
     wp_enqueue_style( 'style', get_stylesheet_uri(), array(), '1.0.0', 'all');
 
     // add google fonts
-    wp_enqueue_style( 'google-font', 'https://fonts.googleapis.com/css?family=Yellowtail', array(), '1.0.0', 'all');
+    wp_enqueue_style( 'google-font', 'https://fonts.googleapis.com/css?family=Yellowtail', array(''), '1.0.0', 'all');
 
     //JS
     wp_enqueue_script( 'script', $dir . '/app.js', array('jquery'), '1.0.0', true );
@@ -52,6 +52,8 @@
  
   }
 
+
+// CUSTOM POST TYPE UI  
   if( function_exists('acf_add_options_page') ) {
 	
     acf_add_options_page(array(

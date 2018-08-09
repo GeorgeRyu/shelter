@@ -1,4 +1,6 @@
 @import "susy";
+@import "photoswipe/dist/photoswipe.css";
+@import "photoswipe/dist/default-skin/default-skin.css";
 
 // common style files
 @import './common/theme';
@@ -9,12 +11,9 @@
 @import './components/header';
 @import './components/footer';
 
-// pages files
-@import './page/blog';
-
 // blocks files
-@import './page/blocks/main-view-area';
-@import './page/blocks/works-area';
-@import './page/blocks/blog-area';
-@import './page/blocks/title-area';
-@import './page/blocks/gallery';
+@import './blocks/main-view-area';
+@import './blocks/works-area';
+@import './blocks/blog-area';
+@import './blocks/title-area';
+@import './blocks/gallery';

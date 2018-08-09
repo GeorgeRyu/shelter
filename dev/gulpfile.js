@@ -114,16 +114,16 @@ gulp.task('css', ['images'], () => {
 
 // JavaScript processing
 gulp.task('js', () => {
-    return gulp.src(js.src)
-      .pipe(deporder())
-      .pipe(concat(js.filename))
-      .pipe(stripdebug())
-      .pipe(babel({
-        presets: ['env']
-       }))      
-      .pipe(uglify())
-      .pipe(gulp.dest(js.build))
-      .pipe(browsersync ? browsersync.reload({ stream: true }) : gutil.noop());  
+  return gulp.src(js.src)
+    .pipe(deporder())
+    .pipe(concat(js.filename))
+    .pipe(stripdebug())
+    .pipe(babel({
+      presets: ['env']
+     }))      
+    .pipe(uglify())
+    .pipe(gulp.dest(js.build))
+    .pipe(browsersync ? browsersync.reload({ stream: true }) : gutil.noop());  
 });
 
 // browser-sync

@@ -12,7 +12,9 @@
     "autoprefixer": "^8.6.3",
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
+    "babelify": "^8.0.0",
     "browser-sync": "^2.24.4",
+    "browserify": "^16.2.2",
     "css-mqpacker": "^6.0.2",
     "cssnano": "^3.10.0",
     "gsap": "^2.0.1",
@@ -29,7 +31,9 @@
     "gulp-util": "^3.0.8",
     "jquery": "^3.3.1",
     "jquery-scrollify": "^1.0.19",
+    "photoswipe": "^4.1.2",
     "postcss-assets": "^5.0.0",
-    "susy": "^3.0.5"
+    "susy": "^3.0.5",
+    "vinyl-source-stream": "^2.0.0"
   }
 }
