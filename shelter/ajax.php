@@ -18,7 +18,10 @@ function gallery_load_more() {
     $paged = $_POST["page"]+1;
 
     $query = new WP_Query( array(
-        'post_type' => 'post',
+        'post_type' => 'works_gallery',
+        'orderby' => 'date', //ID順に並び替え
+        'order' => 'DESC',
+        // 'posts_per_page' => 3,
         'paged' => $paged
     ));
 

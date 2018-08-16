@@ -4,7 +4,7 @@
 <?php
 
 $args = array(
-        'posts_per_page' => 15,
+        // 'posts_per_page' => 15,
         'orderby' => 'date', //ID順に並び替え
         'order' => 'DESC',
         'paged' => get_query_var( 'paged' )
@@ -31,10 +31,11 @@ endif;
 </div>
 
 <div class="gallery__wrap-more">
-    <a class="gallery__mare-btn load-more"
+    <a class="gallery__more-btn load-more"
     data-page="1"
     data-url="<?php echo admin_url('admin-ajax.php'); ?>"
     >
+        <span class="gallery__loading-icon"></span>
         Load More
     </a>
 </div><!-- gallery__wrap-more -->
