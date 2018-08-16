@@ -45,6 +45,11 @@
     wp_enqueue_style( 'google-font', 'https://fonts.googleapis.com/css?family=Yellowtail', array(''), '1.0.0', 'all');
 
     //JS
+
+    wp_enqueue_script( 'photoswipe-default', $dir . '/plugin-js/photoswipe.min.js', array('jquery'), '1.0.0', true );
+
+    wp_enqueue_script( 'photoswipe-min', $dir . '/plugin-js/photoswipe-ui-default.min.js', array('jquery'), '1.0.0', true );
+
     wp_enqueue_script( 'script', $dir . '/app.js', array('jquery'), '1.0.0', true );
      
     }
@@ -65,6 +70,12 @@
     ));
   }
    
+
+  //   INFINITY LOADING
+require get_template_directory() . '/ajax.php';
+
   ?>
+
+
  
   

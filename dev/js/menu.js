@@ -20,7 +20,7 @@ jQuery(document).ready(function($){
             $(".header__btn-menu").toggleClass("active");
             $(".header .header__menu-contents").removeClass('is-open');
             // $(".header .menu-contents .sub-menu").removeClass('is-open2');
-        });
+        });      
     };
     
     menu();  

@@ -1,6 +1,4 @@
 @import "susy";
-@import "photoswipe/dist/photoswipe.css";
-@import "photoswipe/dist/default-skin/default-skin.css";
 
 // common style files
 @import './common/theme';
@@ -10,6 +8,10 @@
 // components style files
 @import './components/header';
 @import './components/footer';
+
+// functions files
+@import './functions/photoswipe/main';
+@import './functions/photoswipe/default-skin/default-skin';
 
 // blocks files
 @import './blocks/main-view-area';
