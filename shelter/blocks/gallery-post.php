@@ -2,7 +2,7 @@
         $category = get_field('category');
         $caption = get_field('caption');
         $img = get_field('image');
-        $medium = $img['sizes'][ 'medium' ];
+        $medium = $img['sizes'][ 'large' ];
         $width = $img['sizes'][ 'large' . '-width' ];
         $height = $img['sizes'][ 'large' . '-height' ];        
 ?>

@@ -1,12 +1,14 @@
 
 <section class="section gallery">
     <div class="gallery__wrap-content">
-        <?php if($category):?>
-            <select class="gallery__sort" name="category">
+		<?php if($category):?>
+		<div class="gallery__wrap-sort">
+			<select class="gallery__sort" name="category">
                 <?php foreach( $category as $item) {
                     echo '<option value="'. $item['value']. '">'. $item['label']. '</option>';
                 } ?>
             </select>
+		</div>
 		<?php 
 		endif; 
 		get_template_part('archive');

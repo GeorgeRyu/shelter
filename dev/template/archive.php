@@ -1,5 +1,5 @@
 
-<div class="gallery__wrap-items my-gallery gallery-container" >
+<div class="gallery__wrap-items my-gallery gallery-container cf" >
 
 <?php
 
