@@ -46,6 +46,15 @@
             overflow: hidden;
             transition: all 0.3s ease;
 
+            opacity: 0;
+            animation: all, 320ms;
+            transform: translateY(24px);
+            
+            &.reveal {
+                transform: translateY(0);
+                opacity: 1;
+            }
+
             &:before {
                 content: "";
                 display: block;;
@@ -54,6 +63,7 @@
                 left: 0;
                 width: 100%;
                 height: 100%;
+                cursor: pointer;
                 background-color: black;
                 opacity: 0.05;
                 z-index: 1;;
@@ -61,7 +71,7 @@
             }
 
             &:hover {
-                box-shadow: 0 6px 16px rgba($brown, 0.1);
+                box-shadow: 0 6px 32px rgba($brown, 0.1);
 
                 &:before {
                     opacity: 0;
@@ -96,30 +106,48 @@
 
     // INFINITY LORDING MORE BUTTOM
     &__wrap-more {
-        display: block;
+        display: inline-block;
         margin-top: 40px;
         padding: 1rem 4rem;
+    }
+
+    &__more-btn {
+        display: block;
         opacity: 0.8;
         transition: all 0.3s ease;
 
-        &:hover {
+        &:hover,
+        &:focus,
+        &.loading {
             opacity: 1;
+        }
 
-            .gallery__loading-icon:before {
+        &:hover {
+            .gallery__lading-icon:before {
                 font-size: 4.5rem;
             }
         }
     }
-    &__more-btn {
-        display: block;
+
+    &__loading-icon {
+        display: block;        
+
+        &:before {
+            content: "\f463";
+            font-family: "dashicons";
+            display: block;
+            font-size: 4rem;
+            margin: 1rem;
+            transition: all 0.3s ease;
+        }
     }
 
-    &__loading-icon:before {
-        content: "\f463";
-        font-family: "dashicons";
-        display: block;
-        font-size: 4rem;
-        margin: 1rem;
-        transition: all 0.3s ease;
+    .spin {
+            animation-name: spin;
+            animation-duration: 1000ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;    
     }
 }
+
+

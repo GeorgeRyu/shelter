@@ -5,6 +5,7 @@
 
 $args = array(
         // 'posts_per_page' => 15,
+        'post_status' => 'publish',
         'orderby' => 'date', //ID順に並び替え
         'order' => 'DESC',
         'paged' => get_query_var( 'paged' )
@@ -36,6 +37,6 @@ endif;
     data-url="<?php echo admin_url('admin-ajax.php'); ?>"
     >
         <span class="gallery__loading-icon"></span>
-        Load More
+        <span class="gallery__loading-text">Load More</span>
     </a>
 </div><!-- gallery__wrap-more -->
