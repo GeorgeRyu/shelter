@@ -1,4 +1,7 @@
 // WORKS        
+
+$bp-s: 760px;
+
 .section-works {
     background: $brown;
     z-index: 100;
@@ -10,9 +13,21 @@
         height: 100%;
         width: 100%;
         z-index: 2;
+
+        @include bp($bp-s) {
+            position: relative;
+            display: block;
+            flex-direction: initial;        
+        }
         
         #n2-ss-1-align {
             width: 50%;
+
+            @include bp($bp-s) {
+                width: 90%;
+                height: 32%;
+                margin: 0 auto;
+            }
             
             >div {
                 height: 100%;
@@ -44,16 +59,33 @@
         display: inline-block;
         text-align: center;
         width: 50%;
-        padding: 20vh 5vw 0 ;
+        padding: 20vh 5vw 0;
+
+        @include bp($bp-s) {
+            width: 100%;
+            padding: 0 8vw;
+            height: 60%;
+        }
 
         h2 {
             font-size: 12vw;
-            margin: 7rem 0;                
+            margin: 7rem 0;
+            
+            @include bp($bp-s) {
+                font-size: 18vw;
+                margin: 7rem 0 4rem;
+            }
         }
 
         p {
             font-size: 1.6vw;
             line-height: 2;    
+
+            @include bp($bp-s) {
+                font-size: 1.6rem;
+                line-height: 2;
+                text-align: left;
+            }            
         }
     }
 
@@ -67,6 +99,10 @@
         img {
             position: absolute;
             width: 40%;
+
+            @include bp($bp-s) {
+                width: 70%;
+            }
         }
     }
 

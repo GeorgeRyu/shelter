@@ -20,14 +20,4 @@
 				<?php endif; ?>
 			</div>
 		</div>
-		<div class="section-main__main-sp-images">
-			<div class="section-main__sp-slider">
-				<ul>
-					<li><img src="<?php echo esc_url(get_template_directory_uri() ); ?>/images/main_sp-visual_1.jpg" alt="work-image01"></li>
-					<li><img src="<?php echo esc_url(get_template_directory_uri() ); ?>/images/main_sp-visual_2.jpg" alt="work-image02"></li>
-					<li><img src="<?php echo esc_url(get_template_directory_uri() ); ?>/images/main_sp-visual_3.jpg" alt="work-image03"></li>
-					<li><img src="<?php echo esc_url(get_template_directory_uri() ); ?>/images/main_sp-visual_4.jpg" alt="work-image04"></li>
-				</ul>
-			</div>
-		</div>
 	</section>

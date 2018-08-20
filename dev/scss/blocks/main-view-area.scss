@@ -1,4 +1,9 @@
-// MAIN        
+// MAIN      
+
+$bp-s: 760px;
+
+
+
 .section-main {
     z-index: 0;
 
@@ -10,6 +15,11 @@
         min-width: 80%;
         transform: translate(-50%, -20%);
         z-index: 5;
+
+        @include bp($bp-s) {
+            min-width: 90%;
+            padding: 0;
+        }
 
         p {
             position: relative;
@@ -41,6 +51,11 @@
         font-size: 11vw;
         text-shadow: 0 0 10px rgba($white, 0.7);
         margin: 0 0 48px;
+
+        @include bp($bp-s) {
+            font-size: 12vw;
+            margin: 0 0 16px;
+        }
     }
 
     &__main-images {
