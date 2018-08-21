@@ -1,10 +1,18 @@
 //BLOG
+$bp-s: 760px;
+$bp-m: 1260px;
+
+
+
 .section-blog {
     z-index: 200;
 
     &__front-content {
         @extend .section-works__front-content;
-        flex-direction: row;
+
+        @include bp($bp-s) {
+            flex-direction: row;
+        }
     }
 
     &__text {
