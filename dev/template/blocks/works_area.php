@@ -1,9 +1,11 @@
 	<section id="works" class="section section-works">
 		<div class="section-works__front-content">
 			<div class="section-works__text">
-				<h2 class="yellowtail"><?php echo $titleWorks;?></h2>	
-				<p><?php echo $descriptionWorks;?></p>					
-				<a class="btn-more" href="<?php echo $linkWorks['url']; ?>" target="<?php echo $linkWorks['target']; ?>"><?php echo $linkWorks['title']; ?></a>
+				<div class="section-works__text-inside">
+					<h2 class="yellowtail"><?php echo $titleWorks;?></h2>	
+					<p><?php echo $descriptionWorks;?></p>					
+					<a class="btn-more" href="<?php echo $linkWorks['url']; ?>" target="<?php echo $linkWorks['target']; ?>"><?php echo $linkWorks['title']; ?></a>
+				</div>
 			</div>
 			<?php echo do_shortcode('[smartslider3 slider=1]'); ?>
 		</div>

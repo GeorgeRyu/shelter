@@ -25,6 +25,10 @@ $bp-m: 1260px;
         }
     }
 
+    &__text-inside {
+        @extend .section-works__text-inside;
+    }
+
     #n2-ss-3-align {
         @extend #n2-ss-1-align;
 

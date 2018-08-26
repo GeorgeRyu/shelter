@@ -66,17 +66,18 @@ $bp-m: 1260px;
         @include bp($bp-s) {
             width: 50%;
             margin: 0;
-            padding: 24vh 5vw 0;    
+            height: 100%;
+            padding: 0 5vw;    
         }
 
         h2 {
             font-size: 18vw;
-            margin: 7rem 0 4rem;
+            margin: 2rem 0 4rem;;
             
             
             @include bp($bp-s) {
                 font-size: 12vw;
-                margin: 7rem 0;
+                margin: 2rem 0 7rem;;
             }
 
             @include bp($bp-m) {
@@ -97,6 +98,18 @@ $bp-m: 1260px;
             @include bp($bp-m) {
                 font-size: 1.8rem;
             }
+        }
+    }
+
+    &__text-inside {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);  
+        
+        @include bp($bp-s) {
+            position: relative;
         }
     }
 
